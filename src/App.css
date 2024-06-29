@@ -2,37 +2,130 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, #app, #app>div{
+  height : 100%;
+  background-image: linear-gradient( rgb(120, 10, 120) , rgb(35, 21, 35) )
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/*To do list */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container{
+  background-color: rgb(35, 31, 31);
+  min-height: 25vh;
+  height : auto;
+  width: 50vh;
+  margin: auto;
+  border-radius: 8px;
+  padding-top : 25px;
+  padding-bottom : 25px;
+}
+.fields{
   color: white;
+  margin: 8px;
+  border: 1px solid white;
+  border-radius: 4px;
+  min-height: 25px;
+}
+#task{
+  width : 70%;
+  height: 10%;
+  text-align: center;
+  background-image: linear-gradient( rgb(119, 6, 119) , rgb(60, 40, 60) );
+ 
+
+}
+#desc{
+  width : 70%;
+  height: 10%;
+  text-align: center;
+  background-image: linear-gradient( rgb(118, 7, 118) , rgb(62, 40, 62) );
+
+}
+#add{
+  width: 30%;
+  background-color: black;
+  
+}
+.list{
+  color : white;
 }
 
-.App-link {
-  color: #61dafb;
+.displayingTask{
+  width: 75%;
+  height : 15%;
+  background-color: rgb(66, 63, 63);
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  position: relative;
+  padding: 10px;
+}
+.task-container{
+  position: relative;
+  padding-right: 30px;
+}
+.btn.del {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list .list-group .task-container span{
+ padding: 20px;
 }
+.list .list-group .task-container .del{
+  background-color: rgb(118, 7, 118);
+  }
+
+  /* Pomodoro TImer */
+
+  .pomodoro{
+    text-align: center;
+    margin-top: 20px;
+    background-color:rgb(30, 27, 27) ;
+    min-height: 30vh;
+    height : auto;
+    width: 50vh;
+    margin: auto;
+    border-radius: 8px;
+    padding: 5px;
+    color: rgb(194, 156, 194);
+  }
+
+  .pomodoro .timer{
+    font-size: 48px;
+    margin: 10px 0;
+    color: rgb(239, 235, 229);
+  }
+  .pomodoro button{
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: black;
+    color: rgb(216, 188, 188);
+  }
+
+  /*Navbar*/
+
+  .route .link{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+  }
+
+  /* Responsive Design*/
+  @media (max-width: 600px) {
+    .container{
+      width: 40vh;
+    }
+    .pomodoro{
+      width: 40vh;
+    }
+
+  }
+
